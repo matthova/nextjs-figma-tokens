@@ -44,7 +44,7 @@
   }
 }
 
-.light {
+[data-theme='light'] {
     --background: #f8faffff;
   --onbackground: #131620ff;
   --surface: #c6d4f9ff;
@@ -64,7 +64,7 @@
   --onprimary: #fdfdfeff;
 }
 
-.dark {
+[data-theme='dark'] {
     --background: #131620ff;
   --onbackground: #eef1fdff;
   --surface: #15192dff;

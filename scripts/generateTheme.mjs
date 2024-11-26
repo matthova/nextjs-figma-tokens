@@ -23,11 +23,11 @@ ${lightTheme.join('\n')}
   }
 }
 
-.light {
+[data-theme='light'] {
   ${lightTheme.join('\n')}
 }
 
-.dark {
+[data-theme='dark'] {
   ${darkTheme.join('\n')}
 }
 
