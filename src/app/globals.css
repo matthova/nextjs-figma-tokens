@@ -3,19 +3,49 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #f8faffff;
+  --onbackground: #131620ff;
+  --surface: #c6d4f9ff;
+  --onsurface: #131620ff;
+  --primary: #3a5cccff;
+  --primaryhover: #3451b2ff;
+  --primaryactive: #3e63ddff;
+  --link: #3a5cccff;
+  --linkhover: #3451b2ff;
+  --linkactive: #3e63ddff;
+  --error: #fdd8d8ff;
+  --onerror: #cd2b31ff;
+  --warning: #fef2a4ff;
+  --onwarning: #946800ff;
+  --success: #ceebcfff;
+  --onsuccess: #297c3bff;
+  --onprimary: #fdfdfeff;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #131620ff;
+    --onbackground: #eef1fdff;
+    --surface: #15192dff;
+    --onsurface: #eef1fdff;
+    --primary: #5373e7ff;
+    --primaryhover: #3e63ddff;
+    --primaryactive: #849dffff;
+    --link: #5373e7ff;
+    --linkhover: #3e63ddff;
+    --linkactive: #849dffff;
+    --error: #671e22ff;
+    --onerror: #feeceeff;
+    --warning: #493c00ff;
+    --onwarning: #fffad1ff;
+    --success: #245530ff;
+    --onsuccess: #e5fbebff;
+    --onprimary: #eef1fdff;
   }
 }
 
 body {
-  color: var(--foreground);
+  color: var(--onbackground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
