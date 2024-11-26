@@ -23,6 +23,14 @@ ${lightTheme.join('\n')}
   }
 }
 
+.light {
+  ${lightTheme.join('\n')}
+}
+
+.dark {
+  ${darkTheme.join('\n')}
+}
+
 body {
   color: var(--onbackground);
   background: var(--background);
