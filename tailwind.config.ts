@@ -12,6 +12,9 @@ export default {
     divideStyle: true,
   },
   theme: {
+    fontFamily: {
+      'mono': ['var(--font-neon-mono)', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'Liberation Mono', 'Courier New', 'monospace'],
+    },
     extend: {
       // <<< THEME INJECTION START >>>
       colors: {

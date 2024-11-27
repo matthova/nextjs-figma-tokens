@@ -1,9 +1,9 @@
-import { ThemeToggle } from "@/design-system/ThemeToggle";
+import { ThemeToggle } from "@/components/ThemeToggle";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <Image
           className="dark:invert"
@@ -13,10 +13,10 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
+        <ol className="list-inside list-decimal text-sm text-center sm:text-left">
           <li className="mb-2">
             Get started by editing{" "}
-            <code className="bg-primary text-onprimary px-1 py-0.5 rounded font-semibold">
+            <code className="bg-primary text-onprimary px-1 py-0.5 rounded font-semibold font-mono">
               src/app/page.tsx
             </code>
             .
@@ -48,6 +48,16 @@ export default function Home() {
           >
             Read our docs
           </a>
+        </div>
+        <div className="grid grid-cols-[80px_1fr]">
+          <h1>h1</h1><h1>The quick brown fox jumps over the lazy dog</h1>
+          <h2>h2</h2><h2>The quick brown fox jumps over the lazy dog</h2>
+          <h3>h3</h3><h3>The quick brown fox jumps over the lazy dog</h3>
+          <h4>h4</h4><h4>The quick brown fox jumps over the lazy dog</h4>
+          <h5>h5</h5><h5>The quick brown fox jumps over the lazy dog</h5>
+          <h6>h6</h6><h6>The quick brown fox jumps over the lazy dog</h6>
+          <p>p</p><p>The quick brown fox jumps over the lazy dog</p>
+          <code>code</code><code>The quick brown fox jumps over the lazy dog</code>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">

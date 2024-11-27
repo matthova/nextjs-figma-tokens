@@ -3,14 +3,14 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { Providers } from "@/components/Providers";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
+const monaSans = localFont({
+  src: "./fonts/Mona-Sans.ttf",
+  variable: "--font-mona-sans",
   weight: "100 900",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
+const neonMono = localFont({
+  src: "./fonts/MonaspaceNeonVarVF[wght,wdth,slnt].ttf",
+  variable: "--font-neon-mono",
   weight: "100 900",
 });
 
@@ -41,7 +41,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${monaSans.variable} ${neonMono.variable} antialiased`}
       >
         <Providers>
           {children}

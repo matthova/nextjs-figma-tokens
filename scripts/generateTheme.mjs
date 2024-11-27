@@ -3,6 +3,7 @@ import { join } from 'path';
 import { dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
+import kebabCase from 'lodash/kebabCase.js';
 
 import theme from '../theme.json' with { type: 'json'};
 
@@ -34,8 +35,17 @@ ${lightTheme.join('\n')}
 body {
   color: var(--onbackground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Mona Sans, Arial, Helvetica, sans-serif;
 }
+
+/* Text defaults */
+${figmaTypographyToCss('h1', theme.typography.h1)}
+${figmaTypographyToCss('h2', theme.typography.h2)}
+${figmaTypographyToCss('h3', theme.typography.h3)}
+${figmaTypographyToCss('h4', theme.typography.h4)}
+${figmaTypographyToCss('h5', theme.typography.h5)}
+${figmaTypographyToCss('h6', theme.typography.h6)}
+${figmaTypographyToCss('p', theme.typography.paragraph)}
 `
 
   fs.writeFile(join(__dirname, '../src/app/globals.css'), globalCss, (...res) => { console.log('all done', res) });
@@ -78,3 +88,9 @@ writeThemeToGlobalCss();
 
 const tailwindConfigPath = join(__dirname, '../tailwind.config.ts')
 writeThemeToTailwindConfig(tailwindConfigPath);
+
+function figmaTypographyToCss(target, object) {
+  return `${target} {
+${Object.entries(object).filter(([key]) => !['paragraphIndent', 'paragraphSpacing', 'textCase'].includes(key)).map(([key, value]) => `  ${kebabCase(key)}: ${value.type === 'dimension' ? Number(value.value).toPrecision(3) : value.value}${value.type === 'dimension' ? 'px' : ''};`).join('\n')}
+}`;
+}
