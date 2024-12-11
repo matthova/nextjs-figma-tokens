@@ -1,5 +1,7 @@
 # NextJS Figmas Tokens
 
+## Check out the live site [here](https://nextjs-figma-tokens.vercel.app/)
+
 This Repo is an example of a minimal NextJS app with design system tokens, which can be exported directly from Figma.
 
 It includes the following features:
