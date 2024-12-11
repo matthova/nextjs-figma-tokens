@@ -50,62 +50,35 @@ export default function Home() {
           </a>
         </div>
         <div className="grid grid-cols-[80px_1fr]">
-          <h1>h1</h1><h1>The quick brown fox jumps over the lazy dog</h1>
-          <h2>h2</h2><h2>The quick brown fox jumps over the lazy dog</h2>
-          <h3>h3</h3><h3>The quick brown fox jumps over the lazy dog</h3>
-          <h4>h4</h4><h4>The quick brown fox jumps over the lazy dog</h4>
-          <h5>h5</h5><h5>The quick brown fox jumps over the lazy dog</h5>
-          <h6>h6</h6><h6>The quick brown fox jumps over the lazy dog</h6>
-          <p>p</p><p>The quick brown fox jumps over the lazy dog</p>
-          <code>code</code><code>The quick brown fox jumps over the lazy dog</code>
+          <h1>h1</h1>
+          <h1>The quick brown fox jumps over the lazy dog</h1>
+          <h2>h2</h2>
+          <h2>The quick brown fox jumps over the lazy dog</h2>
+          <h3>h3</h3>
+          <h3>The quick brown fox jumps over the lazy dog</h3>
+          <h4>h4</h4>
+          <h4>The quick brown fox jumps over the lazy dog</h4>
+          <h5>h5</h5>
+          <h5>The quick brown fox jumps over the lazy dog</h5>
+          <h6>h6</h6>
+          <h6>The quick brown fox jumps over the lazy dog</h6>
+          <p>p</p>
+          <p>The quick brown fox jumps over the lazy dog</p>
+          <code>code</code>
+          <code>The quick brown fox jumps over the lazy dog</code>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hocus:underline hocus:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hocus:underline hocus:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hocus:underline hocus:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+        <div>
+          Check out the Github Repo for this site{" "}
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://github.com/matthova/nextjs-figma-tokens/"
+          >
+            here
+          </a>
+        </div>
       </footer>
     </div>
   );
