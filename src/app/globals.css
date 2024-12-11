@@ -45,7 +45,7 @@
 }
 
 [data-theme='light'] {
-  --background: #f8faffff;
+    --background: #f8faffff;
   --onbackground: #131620ff;
   --surface: #c6d4f9ff;
   --onsurface: #131620ff;
@@ -65,7 +65,7 @@
 }
 
 [data-theme='dark'] {
-  --background: #131620ff;
+    --background: #131620ff;
   --onbackground: #eef1fdff;
   --surface: #15192dff;
   --onsurface: #eef1fdff;
@@ -101,7 +101,6 @@ h1 {
   letter-spacing: 0.00px;
   line-height: 57.3px;
 }
-
 h2 {
   font-size: 39.8px;
   text-decoration: none;
@@ -112,7 +111,6 @@ h2 {
   letter-spacing: 0.00px;
   line-height: 47.8px;
 }
-
 h3 {
   font-size: 33.2px;
   text-decoration: none;
@@ -123,7 +121,6 @@ h3 {
   letter-spacing: 0.00px;
   line-height: 39.8px;
 }
-
 h4 {
   font-size: 27.6px;
   text-decoration: none;
@@ -134,7 +131,6 @@ h4 {
   letter-spacing: 0.00px;
   line-height: 33.2px;
 }
-
 h5 {
   font-size: 23.0px;
   text-decoration: none;
@@ -145,7 +141,6 @@ h5 {
   letter-spacing: 0.00px;
   line-height: 27.6px;
 }
-
 h6 {
   font-size: 19.2px;
   text-decoration: none;
@@ -156,7 +151,6 @@ h6 {
   letter-spacing: 0.00px;
   line-height: 23.0px;
 }
-
 p {
   font-size: 16.0px;
   text-decoration: none;
